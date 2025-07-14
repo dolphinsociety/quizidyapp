@@ -1,0 +1,12 @@
+// now.json or vercel.json
+{
+  "version": 2,
+  "name": "quizidyapp",
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build" }
+  ],
+  "routes": [
+    { "src": "^/static/(.*)", "headers": { "cache-control": "max-age=31536000" } },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
