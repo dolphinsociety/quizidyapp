@@ -1,0 +1,46 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.quiz-app {
+  max-width: 375px;
+  margin: 0 auto;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.answer-btn {
+  background: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.answer-btn.correct {
+  background: #4caf50;
+  color: white;
+}
+
+.answer-btn.incorrect {
+  background: #f44336;
+  color: white;
+}
+
+.timer {
+  font-size: 24px;
+  font-weight: bold;
+}
